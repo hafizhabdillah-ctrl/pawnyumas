@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Dhaksinarga";
+  src: url("/fonts/Dhaksinarga.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-jawa: "Dhaksinarga", "Fraunces", ui-serif, Georgia, serif;
+
+  --color-cream-50: #fefcf8;
+  --color-cream-100: #fbf3e6;
+  --color-cream-200: #f5e8d3;
+  --color-cream-300: #ecd7b6;
+
+  --color-brown-900: #2f1c11;
+  --color-brown-800: #3f2717;
+  --color-brown-700: #5a3823;
+  --color-brown-600: #7a4f31;
+  --color-brown-400: #a9805c;
+
+  --color-rust-600: #c2410c;
+  --color-rust-500: #dd5b1f;
+  --color-rust-400: #e8823f;
+
+  --color-sage-500: #6f8f5b;
+  --color-sky-500: #4a7fa5;
+  --color-berry-500: #b6547a;
+
+  /* Soga: warna coklat khas pewarna batik tradisional Jawa — dipakai sebagai satu-satunya warna aksen ikon di seluruh halaman */
+  --color-soga-50: #f6ede2;
+  --color-soga-100: #ecd9bd;
+  --color-soga-200: #d9b98c;
+  --color-soga-500: #93602e;
+  --color-soga-600: #7a4a22;
+  --color-soga-700: #5f3a1c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream-100);
+  color: var(--color-brown-900);
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-jawa {
+  font-family: var(--font-jawa);
+}
