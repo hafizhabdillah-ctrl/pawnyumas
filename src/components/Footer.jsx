@@ -20,10 +20,6 @@ export default function Footer() {
             <p className="mt-4 text-sm leading-relaxed text-cream-200/70">
               {t.footer.desc}
             </p>
-            <div className="mt-5 flex items-center gap-2 text-xs text-cream-200/60">
-              <span className="h-1.5 w-1.5 rounded-full bg-soga-200" />
-              {t.footer.location}
-            </div>
           </div>
 
           <FooterColumn title={t.footer.exploreTitle} links={t.footer.explore} />

@@ -97,7 +97,6 @@ const translations = {
     },
     footer: {
       desc: "Wadah gayub para furry, fursuiter, pembuat karakter (fursona), dan pecinta seni antropomorfik di Purwokerto, Banyumas Raya, dan sekitarnya sejak awal berdiri hingga sekarang.",
-      location: "Banyumas, Jawa Tengah",
       exploreTitle: "Eksplorasi",
       explore: [
         { label: "Tentang Pawnyumas Raya", href: "#tentang" },
@@ -215,7 +214,6 @@ const translations = {
     },
     footer: {
       desc: "A gathering place for furries, fursuiters, fursona creators, and anthropomorphic art lovers in Purwokerto, Banyumas Raya, and beyond since our earliest days.",
-      location: "Banyumas, Central Java",
       exploreTitle: "Explore",
       explore: [
         { label: "About Pawnyumas Raya", href: "#tentang" },
