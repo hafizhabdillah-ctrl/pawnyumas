@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaLocationDot, FaMapLocationDot } from "react-icons/fa6";
 import { useLanguage } from "../i18n/LanguageContext";
 
@@ -14,11 +14,22 @@ const regionQueries = [
 export default function PetaBanyumas() {
   const { t } = useLanguage();
   const [selected, setSelected] = useState(0);
+  const [zoom, setZoom] = useState(11);
+
+  // A narrow iframe covers less ground at the same zoom level, so step the
+  // zoom out on small screens to keep the visible area close to desktop's.
+  useEffect(() => {
+    const query = window.matchMedia("(max-width: 639px)");
+    const sync = () => setZoom(query.matches ? 10 : 11);
+    sync();
+    query.addEventListener("change", sync);
+    return () => query.removeEventListener("change", sync);
+  }, []);
 
   const activeRegion = t.peta.regions[selected];
   const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(
     regionQueries[selected],
-  )}&z=11&output=embed`;
+  )}&z=${zoom}&output=embed`;
 
   return (
     <section id="peta" className="relative overflow-hidden py-20">
@@ -82,10 +93,10 @@ export default function PetaBanyumas() {
               {activeRegion.name}
             </div>
             <iframe
-              key={selected}
+              key={`${selected}-${zoom}`}
               title={`Peta lokasi ${activeRegion.name}`}
               src={mapSrc}
-              className="aspect-[4/3] w-full sm:aspect-video lg:h-full lg:min-h-[420px]"
+              className="aspect-[4/3] min-h-[340px] w-full sm:aspect-video sm:min-h-0 lg:h-full lg:min-h-[420px]"
               style={{ border: 0 }}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
