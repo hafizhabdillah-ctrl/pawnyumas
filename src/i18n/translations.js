@@ -78,6 +78,10 @@ const translations = {
           desc: "Markas utama & titik kumpul terbesar komunitas.",
         },
         {
+          name: "Banyumas",
+          desc: "Kota bersejarah, cikal bakal nama Kabupaten Banyumas.",
+        },
+        {
           name: "Purbalingga",
           desc: "Basis anggota di kaki utara Gunung Slamet.",
         },
@@ -102,12 +106,10 @@ const translations = {
         { label: "Tentang Pawnyumas Raya", href: "#tentang" },
         { label: "Visi & Misi Komunitas", href: "#visi-misi" },
         { label: "Saluran Komunitas", href: "#saluran" },
+        { label: "Peta Persebaran", href: "#peta" },
       ],
       hubTitle: "Hub Komunitas",
       hub: [{ label: "Discord Server Pawnyumas Lounge", href: "#" }],
-      socialTitle: "Jejaring Sosial",
-      socialDesc:
-        "Terhubung dan ikuti keseruan dokumentasi kegiatan komunitas kami lintas platform.",
       copyright:
         "© 2025 Pawnyumas Raya. Mengungkap kebersamaan, kreativitas, dan persaudaraan tanpa batas di ranah Banyumas.",
     },
@@ -195,6 +197,10 @@ const translations = {
           desc: "The community's home base and biggest meetup hub.",
         },
         {
+          name: "Banyumas",
+          desc: "The historic town that gave the regency its name.",
+        },
+        {
           name: "Purbalingga",
           desc: "A strong member base on the northern foot of Mount Slamet.",
         },
@@ -219,12 +225,10 @@ const translations = {
         { label: "About Pawnyumas Raya", href: "#tentang" },
         { label: "Vision & Mission", href: "#visi-misi" },
         { label: "Community Channels", href: "#saluran" },
+        { label: "Coverage Map", href: "#peta" },
       ],
       hubTitle: "Community Hub",
       hub: [{ label: "Pawnyumas Lounge Discord Server", href: "#" }],
-      socialTitle: "Social Network",
-      socialDesc:
-        "Connect and follow the highlights of our community activities across every platform.",
       copyright:
         "© 2025 Pawnyumas Raya. Sharing togetherness, creativity, and boundless kinship across the land of Banyumas.",
     },

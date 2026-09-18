@@ -19,7 +19,7 @@ export default function VisiMisi() {
           <FaPaw className="pointer-events-none absolute -right-6 -bottom-8 h-40 w-40 text-soga-600/15" />
 
           <p className="relative mt-5 font-display text-xl font-medium leading-snug text-soga-700 sm:text-2xl">
-            {t.visiMisi.quote} Uwaw ini udah bener belum Visi Misi nya wok
+            {t.visiMisi.quote}
           </p>
         </div>
 

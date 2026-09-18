@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-brown-900 text-cream-200">
       <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
-        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
           <div>
             <a href="#top" className="flex items-center gap-2.5">
               <span className="flex h-9 w-9 items-center justify-center rounded-full bg-cream-50 p-1.5 ring-1 ring-soga-600/20">
@@ -23,18 +23,26 @@ export default function Footer() {
           </div>
 
           <FooterColumn title={t.footer.exploreTitle} links={t.footer.explore} />
-          <FooterColumn title={t.footer.hubTitle} links={t.footer.hub} />
 
           <div>
             <h3 className="text-sm font-semibold text-cream-50">
-              {t.footer.socialTitle}
+              {t.footer.hubTitle}
             </h3>
-            <p className="mt-4 text-sm leading-relaxed text-cream-200/70">
-              {t.footer.socialDesc}
-            </p>
+            <ul className="mt-4 space-y-3">
+              {t.footer.hub.map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    className="text-sm text-cream-200/70 transition-colors hover:text-cream-100"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
             <div className="mt-4 flex items-center gap-2.5">
               <a
-                href="#"
+                href={t.footer.hub[0]?.href ?? "#"}
                 className="flex h-9 w-9 items-center justify-center rounded-full bg-cream-50/10 text-cream-100 transition-colors hover:bg-soga-600"
                 aria-label="Discord"
               >
