@@ -3,8 +3,8 @@ import { FaLocationDot, FaMapLocationDot } from "react-icons/fa6";
 import { useLanguage } from "../i18n/LanguageContext";
 
 const regionQueries = [
-  "Purwokerto, Kabupaten Banyumas, Jawa Tengah",
   "Banyumas, Kabupaten Banyumas, Jawa Tengah",
+  "Purwokerto, Kabupaten Banyumas, Jawa Tengah",
   "Purbalingga, Jawa Tengah",
   "Banjarnegara, Jawa Tengah",
   "Cilacap, Jawa Tengah",
