@@ -62,11 +62,6 @@ const translations = {
           desc: "Voice hangout bareng, obrolan santai, dan segudang konten roleplay, fanart, hingga sharing daily.",
           cta: "Buka Discord Server",
         },
-        {
-          name: "Saluran WhatsApp Resmi",
-          desc: "Broadcast tanggal meetup, lokasi kumpul, dan pengumuman resmi tanpa distraksi obrolan berlebih.",
-          cta: "Langganan WhatsApp",
-        },
       ],
     },
     peta: {
@@ -180,11 +175,6 @@ const translations = {
           name: "Official Discord Server",
           desc: "Hang out together, chat casually, and enjoy tons of roleplay content, fan art, and daily sharing.",
           cta: "Open Discord Server",
-        },
-        {
-          name: "Official WhatsApp Channel",
-          desc: "Broadcasts for meetup dates, gathering spots, and official announcements without the chatter overload.",
-          cta: "Follow on WhatsApp",
         },
       ],
     },
