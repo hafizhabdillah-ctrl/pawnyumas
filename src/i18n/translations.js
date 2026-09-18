@@ -74,12 +74,12 @@ const translations = {
       desc: "Anggota kami tersebar di lima wilayah eks Karesidenan Banyumas. Pilih salah satu kota untuk melihat titik lokasinya di peta.",
       regions: [
         {
-          name: "Purwokerto",
-          desc: "Markas utama & titik kumpul terbesar komunitas.",
-        },
-        {
           name: "Banyumas",
           desc: "Kota bersejarah, cikal bakal nama Kabupaten Banyumas.",
+        },
+        {
+          name: "Purwokerto",
+          desc: "Markas utama & titik kumpul terbesar komunitas.",
         },
         {
           name: "Purbalingga",
@@ -193,12 +193,12 @@ const translations = {
       desc: "Our members span five areas of the former Banyumas Residency. Pick a city to see it pinned on the map.",
       regions: [
         {
-          name: "Purwokerto",
-          desc: "The community's home base and biggest meetup hub.",
-        },
-        {
           name: "Banyumas",
           desc: "The historic town that gave the regency its name.",
+        },
+        {
+          name: "Purwokerto",
+          desc: "The community's home base and biggest meetup hub.",
         },
         {
           name: "Purbalingga",
